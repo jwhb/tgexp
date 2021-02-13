@@ -1,4 +1,21 @@
 {
+  "name": "tgexp",
+  "description": "Telegram Expense Tracking Bot",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwhb/tgexp.git"
+  },
+  "keywords": [
+    "telegram",
+    "telegraf"
+  ],
+  "author": "jwhb <jwhy@jwhy.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwhb/tgexp/issues"
+  },
+  "homepage": "https://github.com/jwhb/tgexp",
   "dependencies": {
     "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
@@ -17,6 +34,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "start-dev": "npm exec nodemon index.js"
+    "start-dev": "npm exec nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
