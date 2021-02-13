@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const
-  Telegraf = require('telegraf'),
+  { Telegraf } = require('telegraf'),
   LocalSession = require('telegraf-session-local'),
   commandParts = require('telegraf-command-parts'),
   dayjs = require('dayjs'),
@@ -9,13 +9,15 @@ const
 
 dayjs.extend(require('dayjs/plugin/localizedFormat'))
 
+const datadir = (process.env.DATA_DIR) ? process.env.DATA_DIR : __dirname;
+
 const currency = '€'
 
 // Telegraf Setup
 const bot = new Telegraf(process.env.BOT_TOKEN)
 const property = 'data'
 const localSession = new LocalSession({
-  database: 'data/data.json',
+  database: datadir + '/data.json',
   format: {
     serialize: (obj) => JSON.stringify(obj),
     deserialize: (str) => JSON.parse(str),

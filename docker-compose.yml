@@ -4,4 +4,6 @@ services:
     build: .
     restart: always
     volumes:
-      - './data:/app/data:rw'
+      - './data:/data:rw'
+    environment:
+      DATA_DIR: /data
