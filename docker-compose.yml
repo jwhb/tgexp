@@ -7,3 +7,5 @@ services:
       - './data:/data:rw'
     environment:
       DATA_DIR: /data
+      BOT_TOKEN: "${BOT_TOKEN}"
+
