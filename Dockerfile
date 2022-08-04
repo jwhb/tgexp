@@ -1,4 +1,4 @@
-FROM node:15-alpine
+FROM node:18-alpine
 
 VOLUME /data
 
@@ -10,6 +10,6 @@ COPY ["package.json", "package-lock.json", "/app/"]
 
 RUN npm install --production
 
-COPY . .
+COPY index.js /app/
 
 CMD [ "npm", "start" ]
