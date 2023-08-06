@@ -137,7 +137,7 @@ function getTotalsResetDate(ctx) {
 
 // Render markdown table and wrap in HTML
 function arrayTable(headings, data) {
-  let md_table = table([headings].concat(data), { delimiterStart: false, delimiterEnd: false });
+  let md_table = markdownTable([headings].concat(data), { delimiterStart: false, delimiterEnd: false });
   return '<pre>' + md_table + '</pre>'
 }
 
