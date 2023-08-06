@@ -16,16 +16,17 @@
     "url": "https://github.com/jwhb/tgexp/issues"
   },
   "homepage": "https://github.com/jwhb/tgexp",
+  "type": "module",
   "dependencies": {
-    "dayjs": "^1.10.4",
-    "dotenv": "^8.2.0",
-    "markdown-table": "^2.0.0",
-    "telegraf": "^4.0.3",
+    "dayjs": "^1.11.9",
+    "dotenv": "^16.3.1",
+    "markdown-table": "^3.0.3",
+    "telegraf": "^4.12.2",
     "telegraf-command-parts": "jwhb/telegraf-command-parts",
-    "telegraf-session-local": "^2.1.0"
+    "telegraf-session-local": "^2.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^3.0.1"
   },
   "nodemonConfig": {
     "watch": [

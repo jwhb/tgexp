@@ -1,15 +1,15 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+import { Telegraf } from 'telegraf';
+import LocalSession from 'telegraf-session-local';
+import commandParts from 'telegraf-command-parts';
+import dayjs from 'dayjs';
+import {markdownTable} from 'markdown-table'
+import 'dayjs/locale/de.js'
 
-const
-  { Telegraf } = require('telegraf'),
-  LocalSession = require('telegraf-session-local'),
-  commandParts = require('telegraf-command-parts'),
-  dayjs = require('dayjs'),
-  table = require('markdown-table')
+dotenv.config();
+dayjs.locale('de')
 
-dayjs.extend(require('dayjs/plugin/localizedFormat'))
-
-const datadir = (process.env.DATA_DIR) ? process.env.DATA_DIR : __dirname;
+const datadir = process.env.DATA_DIR || '.';
 
 const currency = '€'
 
