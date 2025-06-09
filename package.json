@@ -18,15 +18,15 @@
   "homepage": "https://github.com/jwhb/tgexp",
   "type": "module",
   "dependencies": {
-    "dayjs": "^1.11.9",
-    "dotenv": "^16.3.1",
-    "markdown-table": "^3.0.3",
-    "telegraf": "^4.12.2",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "markdown-table": "^3.0.4",
+    "telegraf": "^4.16.3",
     "telegraf-command-parts": "jwhb/telegraf-command-parts",
     "telegraf-session-local": "^2.1.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.10"
   },
   "nodemonConfig": {
     "watch": [
